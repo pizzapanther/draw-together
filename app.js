@@ -26,7 +26,8 @@ io.on('connection', function(client){
   });
 });
 
-http.listen(8000, function () {
+var PORT = process.env.PORT || 8000;
+http.listen(PORT, function () {
   console.log('Listening on port 8000');
 });
 
